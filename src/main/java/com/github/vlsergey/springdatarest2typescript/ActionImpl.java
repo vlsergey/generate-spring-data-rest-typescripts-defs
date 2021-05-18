@@ -177,7 +177,7 @@ class ActionImpl implements Action<Task> {
 	    final ByteArrayOutputStream baos = new ByteArrayOutputStream();
 	    PrintStream result = new PrintStream(baos, true, StandardCharsets.UTF_8);
 
-	    result.println("interface " + this.ownConfig.getLinkTypeName().get() + " {");
+	    result.println("export interface " + this.ownConfig.getLinkTypeName().get() + " {");
 	    result.println("  href: string;");
 	    result.println("}");
 	    result.println();
@@ -209,7 +209,7 @@ class ActionImpl implements Action<Task> {
 	    final Set<Class<?>> otherCandidates, final PrintStream result) throws IntrospectionException {
 
 	final String simpleName = cls.getSimpleName();
-	result.println("interface " + simpleName + this.ownConfig.getTypeSuffix().get() + " {");
+	result.println("export interface " + simpleName + this.ownConfig.getTypeSuffix().get() + " {");
 
 	Set<String> links = new TreeSet<>();
 	links.add("self");
