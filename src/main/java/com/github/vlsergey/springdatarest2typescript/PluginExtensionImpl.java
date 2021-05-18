@@ -16,9 +16,13 @@ abstract class PluginExtensionImpl {
 
     abstract Property<String> getBasePackage();
 
+    abstract Property<String> getLinkTypeName();
+
     abstract RegularFileProperty getOutput();
 
     abstract Property<String> getTypeSuffix();
 
-    abstract Property<String> getLinkTypeName();
+    public enum EnumMode {
+	BUILTIN, SEPARATELY,;
+    }
 }
