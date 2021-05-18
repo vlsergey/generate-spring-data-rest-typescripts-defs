@@ -29,7 +29,7 @@ dependencies {
 
 pluginBundle {
     website = 'https://github.com/vlsergey/generate-spring-data-rest-typescripts-defs'
-    vcsUrl = 'https://github.com/vlsergey/generate-spring-data-rest-typescripts-defs'
+    vcsUrl = 'https://github.com/vlsergey/generate-spring-data-rest-typescripts-defs.git'
     description = 'Gradle plug-in to generate typescript definitions of Spring Data REST entities'
     tags = ['spring', 'hateoas', 'rest', 'typescript', 'codegeneration']
 
