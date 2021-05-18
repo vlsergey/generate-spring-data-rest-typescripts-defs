@@ -30,8 +30,14 @@ dependencies {
 pluginBundle {
     website = 'https://github.com/vlsergey/generate-spring-data-rest-typescripts-defs'
     vcsUrl = 'https://github.com/vlsergey/generate-spring-data-rest-typescripts-defs.git'
-    description = 'Gradle plug-in to generate typescript definitions of Spring Data REST entities'
+    description = 'Gradle plug-in to generate TypeScript definitions of Spring Data REST entities'
     tags = ['spring', 'hateoas', 'rest', 'typescript', 'codegeneration']
+
+    mavenCoordinates {
+	groupId = project.group.toString()
+	artifactId = project.name
+	version = project.version.toString()
+    }
 
     plugins {
 	springdatarest2typescript {
