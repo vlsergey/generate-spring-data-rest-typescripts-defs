@@ -46,10 +46,12 @@ class ActionImpl implements Action<Task> {
 
     private static final Map<Class<?>, String> standardClassesToTypeScript = new HashMap<>();
 
+    private static final String TS_BOOLEAN = "boolean";
     private static final String TS_NUMBER = "number";
     private static final String TS_STRING = "string";
 
     static {
+	standardClassesToTypeScript.put(Boolean.class, TS_BOOLEAN);
 	standardClassesToTypeScript.put(Number.class, TS_NUMBER);
 	standardClassesToTypeScript.put(String.class, TS_STRING);
 	standardClassesToTypeScript.put(Temporal.class, TS_STRING);
@@ -57,6 +59,7 @@ class ActionImpl implements Action<Task> {
 	standardClassesToTypeScript.put(URL.class, TS_STRING);
 	standardClassesToTypeScript.put(UUID.class, TS_STRING);
 
+	standardClassesToTypeScript.put(boolean.class, TS_STRING);
 	standardClassesToTypeScript.put(byte.class, TS_STRING);
 	standardClassesToTypeScript.put(double.class, TS_STRING);
 	standardClassesToTypeScript.put(int.class, TS_STRING);
