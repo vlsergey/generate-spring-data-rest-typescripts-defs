@@ -59,7 +59,7 @@ class ActionImpl implements Action<Task> {
 	standardClassesToTypeScript.put(URL.class, TS_STRING);
 	standardClassesToTypeScript.put(UUID.class, TS_STRING);
 
-	standardClassesToTypeScript.put(boolean.class, TS_STRING);
+	standardClassesToTypeScript.put(boolean.class, TS_BOOLEAN);
 	standardClassesToTypeScript.put(byte.class, TS_STRING);
 	standardClassesToTypeScript.put(double.class, TS_STRING);
 	standardClassesToTypeScript.put(int.class, TS_STRING);
