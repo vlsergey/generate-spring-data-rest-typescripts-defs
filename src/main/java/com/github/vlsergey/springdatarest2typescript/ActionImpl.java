@@ -60,11 +60,11 @@ class ActionImpl implements Action<Task> {
 	standardClassesToTypeScript.put(UUID.class, TS_STRING);
 
 	standardClassesToTypeScript.put(boolean.class, TS_BOOLEAN);
-	standardClassesToTypeScript.put(byte.class, TS_STRING);
-	standardClassesToTypeScript.put(double.class, TS_STRING);
-	standardClassesToTypeScript.put(int.class, TS_STRING);
-	standardClassesToTypeScript.put(long.class, TS_STRING);
-	standardClassesToTypeScript.put(short.class, TS_STRING);
+	standardClassesToTypeScript.put(byte.class, TS_NUMBER);
+	standardClassesToTypeScript.put(double.class, TS_NUMBER);
+	standardClassesToTypeScript.put(int.class, TS_NUMBER);
+	standardClassesToTypeScript.put(long.class, TS_NUMBER);
+	standardClassesToTypeScript.put(short.class, TS_NUMBER);
     }
 
     private final PluginExtensionImpl ownConfig;
